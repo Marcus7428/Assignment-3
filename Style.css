@@ -9,7 +9,7 @@ body {
     height: 100vh;
 }
 
-.heronForm {
+.heron {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -20,22 +20,22 @@ body {
     align-items: center;
 }
 
-.heronForm h2 {
+.heron h2 {
     margin-bottom: 20px;
     font-size: 24px;
     text-align: center;
     font-weight: bold;
 }
 
-.heronForm label {
+.heron label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     width: 100%;
 }
 
-.heronForm input[type="number"],
-.heronForm input[type="text"] {
+.heron input[type="number"],
+.heron input[type="text"] {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -44,7 +44,7 @@ body {
     box-sizing: border-box;
 }
 
-.heronForm button {
+.heron button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -55,11 +55,11 @@ body {
     font-size: 16px;
 }
 
-.heronForm button:hover {
+.heron button:hover {
     background-color: #0056b3;
 }
 
-.heronForm .result {
+.heron .result {
     margin-top: 10px;
     font-weight: bold;
     width: 100%;
