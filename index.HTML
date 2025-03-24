@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <form id="heron" class="heron">
+        <h2>Heron's formula</h2>
+        <label for="heronSideA">Length of side A:</label>
+        <input type="double" id="heronSideA" name="heronSideA" required>
+        <br>
+        <label for="heronSideB">Length of side B:</label>
+        <input type="double" id="heronSideB" name="heronSideB" required>
+        <br>
+        <label for="heronSideC">Length of side C:</label>
+        <input type="double" id="heronSideC" name="heronSideC" required>
+        <br>
+        <button type="submit">Calculate</button>
+        <br>
+        <label for="heronResult">Area (Result):</label>
+        <input type="text" id="heronResult" name="heronResult" readonly>
+    </form>
+    <form id="ambiguous" class="ambiguous">
+        <h2>Ambiguous case</h2>
+        <label for="ambiguousSideA">Length of side A:</label>
+        <input type="double" id="ambiguousSideA" name="ambiguousSideA" required>
+        <br>
+        <label for="ambiguousSideB">Length of side B:</label>
+        <input type="double" id="ambiguousSideB" name="ambiguousSideB" required>
+        <br>
+        <label for="ambiguousAngleA">Angle a:</label>
+        <input type="double" id="ambiguousAngleA" name="ambiguousAngleA" required>
+        <br>
+        <button type="submit">Calculate</button>
+        <br>
+        <label for="ambiguousResult">Triangle Type (Result):</label>
+        <input type="text" id="ambiguousResult" name="ambiguousResult" readonly>
+    </form>
+    </div>
+    <div>
+    <form id="newton" class="newton">
+        <h2>Newton's method</h2>
+        <label for="guess">Root Guess:</label>
+        <input type="double" id="guess" name="guess" required>
+        <br>
+        <button type="submit">Calculate</button>
+        <br>
+        <label for="newtonResult">Root Approximation (Result):</label>
+        <input type="text" id="newtonResult" name="newtonResult" readonly>
+    </form>
+    <form id="polynomial" class="polynomial">
+        <h2>Polynomial Function</h2>
+        <label for="polynomialCoefficients">Coefficients:</label>
+        <input type="text" id="polynomialCoefficients" name="polynomialCoefficients" required>
+        <br>
+        <label for="polynomialExponents">Exponents:</label>
+        <input type="text" id="polynomialExponents" name="polynomialExponents" required>
+        <br>
+        <label for="polynomialX">x Value:</label>
+        <input type="double" id="polynomialX" name="polynomialX" required>
+        <br>
+        <button type="submit">Calculate</button>
+        <br>
+        <label for="polynomialFunction">Polynomial Function (Result):</label>
+        <input type="text" id="polynomialFunction" name="polynomialFunction" readonly>
+        <br>
+        <label for="polynomialEvaluation">Polynomial Evaluation (Result):</label>
+        <input type="text" id="polynomialEvaluation" name="polynomialEvaluation" readonly>
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

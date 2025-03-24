@@ -7,9 +7,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-wrap: wrap;
 }
 
-.heron {
+.calculator-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.heron, .ambiguous, .newton, .polynomial {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -18,24 +27,27 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 
-.heron h2 {
+.heron h2, .ambiguous h2, .newton h2, .polynomial h2 {
     margin-bottom: 20px;
     font-size: 24px;
     text-align: center;
     font-weight: bold;
 }
 
-.heron label {
+.heron label, .ambiguous label, .newton label, .polynomial label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     width: 100%;
 }
 
-.heron input[type="number"],
-.heron input[type="text"] {
+.heron input[type="double"], .heron input[type="text"],
+.ambiguous input[type="double"], .ambiguous input[type="text"],
+.newton input[type="double"], .newton input[type="text"],
+.polynomial input[type="double"], .polynomial input[type="text"] {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -44,7 +56,7 @@ body {
     box-sizing: border-box;
 }
 
-.heron button {
+.heron button, .ambiguous button, .newton button, .polynomial button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -55,11 +67,11 @@ body {
     font-size: 16px;
 }
 
-.heron button:hover {
+.heron button:hover, .ambiguous button:hover, .newton button:hover, .polynomial button:hover {
     background-color: #0056b3;
 }
 
-.heron .result {
+.heron .result, .ambiguous .result, .newton .result, .polynomial .result {
     margin-top: 10px;
     font-weight: bold;
     width: 100%;
